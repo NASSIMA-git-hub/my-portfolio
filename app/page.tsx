@@ -29,8 +29,8 @@ export default function Portfolio() {
       description: "A responsive portfolio website showcasing projects and skills. Built with React and modern design principles.",
       tags: ["React", "Next.js", "Responsive Design"],
       image: "/img/Screenshot 2025-12-17 at 12-28-34 Create Next App.png",
-      github: "https://github.com/NASSIMA-git-hub",
-      live: "#",
+      github: "https://github.com/NASSIMA-git-hub/my-portfolio",
+      live: "#https://my-portfolio-ruddy-eight-39.vercel.app/",
       featured: true
     }
   ];
