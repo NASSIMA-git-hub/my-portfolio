@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Mail, ExternalLink, ArrowRight, Code, Database, Palette, Award, BookOpen, Briefcase } from 'lucide-react';
-
+import Image from 'next/image';
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -89,13 +89,13 @@ export default function Portfolio() {
               <a href="#contact" className="block text-gray-700 hover:text-blue-600 transition font-medium" onClick={() => setIsMenuOpen(false)}>Contact</a>
             </div>
           </div>
-        )}
+        )}    
       </nav>
 
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-blue-600 font-semibold mb-4 text-lg">Hello, I'm</p>
+          <p className="text-blue-600 font-semibold mb-4 text-lg">Hello, I&apos;m</p>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900">Nassima Daddou</h1>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Web Developer
@@ -134,13 +134,13 @@ export default function Portfolio() {
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-gray-900">About Me</h2>
           <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 md:p-12 shadow-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Hi, I'm <span className="font-semibold text-blue-600">Nassima Daddou</span>, a passionate beginner web developer dedicated to creating modern and interactive web applications. I find joy in learning new web technologies and constantly improving my coding skills through hands-on projects and continuous practice.
+              Hi, I&apos;m <span className="font-semibold text-blue-600">Nassima Daddou</span>, a passionate beginner web developer dedicated to creating modern and interactive web applications. I find joy in learning new web technologies and constantly improving my coding skills through hands-on projects and continuous practice.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               My journey in web development started with a curiosity about how websites work, and has evolved into a deep passion for building user-friendly interfaces and solving real-world problems through code. I believe in writing clean, maintainable code and following best practices in web development.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              <span className="font-semibold text-purple-600">My goal</span> is to become a professional full-stack developer and work on impactful projects that make a difference in people's lives. I'm excited about the endless possibilities in web development and look forward to contributing to innovative solutions that help communities thrive.
+              <span className="font-semibold text-purple-600">My goal</span> is to become a professional full-stack developer and work on impactful projects that make a difference in people&apos;s lives. I&apos;m excited about the endless possibilities in web development and look forward to contributing to innovative solutions that help communities thrive.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
               <div className="bg-white px-6 py-3 rounded-full shadow-md">
@@ -215,7 +215,7 @@ export default function Portfolio() {
             {projects.map((project, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-gray-100 group">
                 <div className="relative overflow-hidden h-56">
-                  <img 
+                  <Image 
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
@@ -327,7 +327,7 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-gradient-to-br from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Let's Work Together</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Let&apos;s Work Together</h2>
           <p className="text-xl text-blue-100 mb-12 leading-relaxed">
             I am currently available for freelance work and beginner web development projects. 
             Whether you need a website, a web application, or just want to collaborate, feel free to reach out!
@@ -387,3 +387,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
+
